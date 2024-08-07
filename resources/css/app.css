@@ -1,78 +1,42 @@
-* {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
-  padding: 0;
 }
 
-html,
-body {
-  height: 100%;
+.login-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, button {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
   width: 100%;
+  box-sizing: border-box;
 }
 
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffdddd;
-}
-header {
-    background-color: #ff92cc;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #444;
-}
-nav a {
-    color: #fff;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-}
-nav a:hover {
-    background-color: #f07fff;
-}
-.container {
-    width: 80%;
-    margin: 20px auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-.product {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    width: calc(33.333% - 20px);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 10px;
-}
-.product img {
-    max-width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-}
-.product h3 {
-    margin: 10px 0;
-    color: #333;
-}
-.product p {
-    color: #666;
-    font-size: 1.1em;
-}
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+button:hover {
+  background-color: #0056b3;
 }
