@@ -72,7 +72,6 @@ export default defineConfig({
     ],
     forceExit: false,
   },
-
   metaFiles: [
     {
       pattern: 'resources/views/**/*.edge',
@@ -83,9 +82,4 @@ export default defineConfig({
       reloadServer: false,
     },
   ],
-
-  assetsBundler: false,
-  hooks: {
-    onBuildStarting: [() => import('@adonisjs/vite/build_hook')],
-  },
 })
